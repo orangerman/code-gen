@@ -173,14 +173,8 @@ public class CodeGenerator {
         String baseDir = "generated-sources/";
         String packagePath = context.getBasePackage().replace(".", "/");
         return switch (codeType) {
-            case DTO -> baseDir + packagePath + "/dto/" + context.getSimpleClassName() + "DTO.java";
-            case VO -> baseDir + packagePath + "/vo/" + context.getSimpleClassName() + "VO.java";
             case MAPPER -> baseDir + packagePath + "/mapper/" + context.getSimpleClassName() + "Mapper.java";
             case SERVICE -> baseDir + packagePath + "/service/" + context.getSimpleClassName() + "Service.java";
-            case SERVICE_IMPL ->
-                    baseDir + packagePath + "/service/impl/" + context.getSimpleClassName() + "ServiceImpl.java";
-            case CONTROLLER ->
-                    baseDir + packagePath + "/controller/" + context.getSimpleClassName() + "Controller.java";
             case JOB -> baseDir + packagePath + "/job/" + context.getBillType() + "SysJob.java";
             default -> throw new IllegalArgumentException("Unsupported code type: " + codeType);
         };
