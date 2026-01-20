@@ -1,4 +1,4 @@
-package com.codegen.example;
+package com.codegen.bill;
 
 import com.codegen.annotation.CodeType;
 import com.codegen.annotation.GenerateCode;
