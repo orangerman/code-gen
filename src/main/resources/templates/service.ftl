@@ -1,10 +1,6 @@
 package ${context.basePackage}.service;
 
 import ${context.className};
-import ${context.basePackage}.dto.${context.simpleClassName}DTO;
-import ${context.basePackage}.vo.${context.simpleClassName}VO;
-
-import java.util.List;
 
 /**
  * ${context.simpleClassName} Service

@@ -2,8 +2,6 @@ package ${context.basePackage}.mapper;
 
 import ${context.className};
 
-import java.util.List;
-
 /**
  * ${context.simpleClassName} Mapper
  *
